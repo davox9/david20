@@ -198,3 +198,50 @@ grid-template-areas:
 flex:display;
 position:center;
 }
+
+.circle1, .circle2, .circle3 {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 15px;
+}
+.circle1{
+    background-color: red;
+    transition:all 3s ease-in;
+}
+.circle2{
+    background-color: limegreen;
+    transition: all 3s ease-in-out;
+}
+.circle3{
+    background-color: cornflowerblue;
+    transition: all 3s ease-out
+}
+
+.container-circle:hover .circle1,
+.container-circle:hover .circle2,
+.container-circle:hover .circle3 {
+    transform:translateX(300px);
+
+}
+.imagen img{
+  margin: 300px;;
+}
+.imagen img:hover {
+  animation: messi 5s;
+}
+@keyframes messi{
+  0%{
+      transform: scale(1.3);
+      transform:translateX(100px)
+  }
+  25%{
+      translate: all 2s;
+  }
+  75%{
+      border-radius:100cm;
+  }
+  99%{
+      border-radius: 200cm;
+  }
+}
